@@ -1,0 +1,30 @@
+/*fonte google - ROBOTO - REGULAR - 25 - PARA O MENU*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*CSS reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    background-color:#1E1C21;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.logo{
+    border-style: hidden;
+}
+
+.menu{
+    color: #ffffff;
+    font-family: 'Roboto';
+    height: 25px;
+    border-style:hidden;
+    color: #ffffff;
+    text-decoration: none; 
+    padding: 10px;
+}

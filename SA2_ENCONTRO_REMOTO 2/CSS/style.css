@@ -1,0 +1,132 @@
+/*fonte google - ROBOTO - REGULAR - 25 - PARA O MENU*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+@font-face{
+    font-family: Titilium-Regular;
+    src: url(../fontes/TitilliumWeb-Regular.ttf);
+}
+
+/*CSS reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    background-color:#1E1C21;
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: center;
+    padding: 1em;    
+}
+
+header .headContainer{
+    width: 1200px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .headContainer .logoContainer{
+    align-items: center;
+}
+
+header .headContainer .logoContainer .logo{
+    width: 280px;
+}
+
+header .headContainer nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 780px;
+}
+
+header .headContainer nav .menu{
+    font-family: 'Roboto';
+    color: #ffffff; 
+    padding: 0 15px;
+    
+    font-size: 25px;
+    text-decoration: none; 
+    text-transform: uppercase;
+}
+
+/* seção dos produtos */
+
+.produtos{
+    width: 100%;
+    height: 600px;
+    background-color: brown;
+    background-image: url(../images/banner_pilotos.png);
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content:center;
+}
+
+.produtos .container-grid{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 1200px;
+}
+
+.produtos .banner-info{
+    width: 500px;
+    height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.produtos .banner-info h1{
+    font-family: "Titilium-Regular";
+    font-size: 80px;
+    font-weight: 100;
+    text-align: center;
+    color: white;
+}
+
+.produtos .banner-info p{
+    font-family: 'Roboto';
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+.produtos .banner-info nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* botão */
+.produtos .banner-info nav a{
+    width: 250px;
+    height: 65px;
+    margin: 10px auto;
+
+    border-radius: 10px;
+    border-style: none;
+
+    background-color: #c31616;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: 'Roboto';
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
