@@ -53,6 +53,8 @@
             opacity: 0%;
 
             transition: linear 0.5s; opacity: 95% 0.8s;
+
+            z-index: 1; /* usar a opção Z-INDEX para enviar o menu por cima do elementos de bootstrap*/
         }
 
         header .headContainer .mostraMenu{
@@ -76,11 +78,6 @@
         
 
     /* seção dos produtos phone*/
-
-        /* usar a opção Z-INDEX para enviar o carrosel para traz do menu*/
-        .carousel {
-            z-index: -1;
-        }
 
         .container{
             background-color:#1E1C21;
@@ -207,6 +204,8 @@
             opacity: 0%;
 
             transition: linear 0.5s; opacity: 95% 0.8s;
+
+            z-index: 1; /* usar a opção Z-INDEX para enviar o menu por cima do elementos de bootstrap*/
         }
 
         header .headContainer .mostraMenu{
