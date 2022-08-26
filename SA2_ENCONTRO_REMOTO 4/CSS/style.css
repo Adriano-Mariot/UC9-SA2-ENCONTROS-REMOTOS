@@ -229,11 +229,6 @@
 
         /* seção dos produtos tablet */
 
-        /* usar a opção Z-INDEX para enviar o carrosel para traz do menu*/
-        .carousel {
-            z-index: -1;
-        }
-
         .produtos{ 
             width: 100%;
             height: 400px;
