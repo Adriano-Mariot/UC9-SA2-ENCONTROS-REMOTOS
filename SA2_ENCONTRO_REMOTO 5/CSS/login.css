@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "Roboto-Thin";
+    src: url(../fontes/Roboto/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Light";
+    src: url(../fontes/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: "TitilliumWeb-Regular";
+    src: url(../fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
+}
+
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(70, 70, 70);
+    color: white;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+.form-login {
+
+    box-shadow: 0px 0px 10px black;
+    padding: 2%;
+    min-width: 300px;
+    max-width: 960px;
+    border-radius: 10px;
+    background-color: rgb(56, 56, 56);
+ 
+}
+
+.form-login .linha {
+    display: flex;
+    flex-direction: column;
+    margin:7px auto;    
+}
+
+.form-login .linha label {
+    font-family: "Roboto-light";
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    
+}
+
+.form-login .linha input {
+    font-family: "Roboto-light";
+    border-radius: 10px;
+    height: 40px;
+    padding: 0 10px;
+}
+
+.form-login .btn-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-login .btn-actions button {
+    width: 50%;
+}

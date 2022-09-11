@@ -1,0 +1,662 @@
+    /*fonte google - ROBOTO - REGULAR - 25 - PARA O MENU*/
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+    @font-face{
+    font-family: Titilium-Regular;
+    src: url(../fontes/TitilliumWeb-Regular.ttf);
+    }
+
+    /*CSS reset*/
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    /* mobile first de 0px a 767px*/
+    @media screen and (max-width: 767px) {
+        header{
+            background-color:#1E1C21;
+            margin: 0 auto;
+        }
+
+        header .headContainer .logoContainer{
+            display: flex;
+            justify-content:space-between;
+            padding: 1em 2em !important;    
+        }
+
+        header .headContainer .logoContainer .logo{
+            max-width: 190px;
+        }
+
+        header .headContainer .logoContainer .imgMenu{
+            max-width: 40px;
+        }
+
+        header .headContainer .menuNav{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            width: 80%;
+            height: 100%;
+            background-color: #1E1C21;
+
+            position: absolute;
+            top: 0;
+            left: -80%;
+            border: none;
+            border-radius: 0 0 0 50px;
+
+            opacity: 0%;
+
+            transition: linear 0.5s; opacity: 95% 0.8s;
+
+            z-index: 1; /* usar a opção Z-INDEX para enviar o menu por cima do elementos de bootstrap*/
+        }
+
+        header .headContainer .mostraMenu{
+            left:0;
+            opacity: 95%;
+        }
+
+        header .headContainer nav .menu{
+            font-family: 'Roboto';
+            color: #ffffff; 
+            margin: 10px 30px;
+            padding: 10px;
+            
+            font-size:5vw;
+            text-decoration: none; 
+            text-transform: uppercase;
+
+            border-left-style: dotted;
+            border-color: white;
+        }
+        
+
+    /* seção dos produtos phone*/
+
+        .container{
+            background-color:#1E1C21;
+        }
+
+        .container h1{
+            color: white;
+        }
+
+        /* antiga seção de produtos*/
+    
+        .produtos{
+        width: 100%;
+        height: 300px;
+
+        background-color: brown;
+        background-image: url(../images/banner_pilotos.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+    
+        display: flex;
+        justify-content:center;
+        }
+    
+        .produtos .container-grid{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        }
+
+    .produtos .banner-info{
+        width: 280px;
+        height: 250px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        }
+
+    .produtos .banner-info h1{
+        font-family: "Titilium-Regular";
+        font-size: 40px;
+        font-weight: 100;
+        text-align: center;
+        color: white;
+        }
+
+    .produtos .banner-info p{
+        font-family: 'Roboto';
+        text-align: center;
+        font-size: 15px;
+        color: white;
+        }
+
+    .produtos .banner-info nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+    /* botão */
+    .produtos .banner-info nav a{
+        width: 250px;
+        height: 65px;
+        margin: 10px auto;
+
+        border-radius: 10px;
+        border-style: none;
+
+        background-color: #c31616;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        font-family: 'Roboto';
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        }
+
+        .produtos1{
+            background-color: #1E1C21;
+        }
+
+        .container{
+
+            padding:0;
+
+        }
+
+        .container .ofertas {
+            font-family: Titilium-Regular;
+            color: white;
+            text-transform: uppercase;
+
+        }
+
+        .container .row {            
+            padding:0;
+            margin: 0;
+
+        }
+
+        .container .row .col-12 {
+    
+            padding:0;
+            margin: 0;
+            padding: 10px ;
+        }
+
+        .container .row .col-12 .card{
+            
+            background-image: linear-gradient(#C4C4C4,black);
+            border-radius: 0;
+            border-style: none;
+            color: white;
+            max-width: 250px;
+
+            box-shadow: (5px 5px 5px black);             
+
+        }
+       
+
+        .container .row .col-12 .card img{
+            border-style: none;
+            border-radius: 0;
+        };
+
+        .container .row .col-12 .card .card-body{
+            padding:0;
+            margin: 0;
+            
+        }
+
+        .container .row .col-12 .card .card-body .card-title{
+            font-family: 'Roboto';
+            font-size: 22px;
+
+        }
+
+        .container .row .col-12 .card .card-body .card-text{
+            font-family: 'Roboto';
+            font-size: 18px;
+        }
+        
+        .container .row .col-12 .card .card-body .btn{
+
+            background-color: #c31616;
+            border-style: none;
+
+            width: 100%;
+
+            text-transform: uppercase;
+            font-family: 'Roboto';
+
+        }
+    
+}
+
+    /* tablet de 768 a 991*/
+    @media screen and (min-width: 768px) and (max-width: 991px){
+
+        header{
+            background-color:#1E1C21;
+            margin: 0 auto;
+        }
+
+        header .headContainer .logoContainer{
+            display: flex;
+            justify-content:space-between;
+            padding: 1em 2em !important; 
+            
+        }   
+
+        header .headContainer .logoContainer .logo{
+            max-width: 300px;
+        }
+
+        header .headContainer .logoContainer .imgMenu{
+            max-width: 60px;   
+        }
+
+        header .headContainer .menuNav{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            width: 80%;
+            height: 100%;
+            background-color: #1E1C21;
+
+            position: absolute;
+            top: 0;
+            left: -80%;
+            border: none;
+            border-radius: 0 0 0 50px;
+
+            opacity: 0%;
+
+            transition: linear 0.5s; opacity: 95% 0.8s;
+
+            z-index: 1; /* usar a opção Z-INDEX para enviar o menu por cima do elementos de bootstrap*/
+        }
+
+        header .headContainer .mostraMenu{
+            left:0;
+            opacity: 95%;
+        }
+
+        header .headContainer nav .menu{
+            font-family: 'Roboto';
+            color: #ffffff; 
+            margin: 20px 80px;
+            padding: 20px;
+            
+            font-size: 5vw;
+            text-decoration: none; 
+            text-transform: uppercase;
+
+            border-left-style: dotted;
+            border-color: white;
+        }
+
+        /* seção dos produtos tablet */
+
+        .produtos{ 
+            width: 100%;
+            height: 400px;
+
+            background-color: brown;
+            background-image: url(../images/banner_pilotos.png);
+            background-repeat: no-repeat;
+            background-size:cover;
+        
+            display: flex;
+            justify-content:center;
+        }
+
+        .produtos .container-grid{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .produtos .banner-info{
+            width: 350px;
+            height: 250px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        .produtos .banner-info h1{
+            font-family: "Titilium-Regular";
+            font-size: 50px;
+            font-weight: 100;
+            text-align: center;
+            color: white;
+        }
+
+        .produtos .banner-info p{
+            font-family: 'Roboto';
+            text-align: center;
+            font-size: 25px;
+            color: white;
+        }
+
+        .produtos .banner-info nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* botão */
+        .produtos .banner-info nav a{
+            width: 280px;
+            height: 65px;
+            margin: 10px auto;
+
+            border-radius: 10px;
+            border-style: none;
+
+            background-color: #c31616;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            font-family: 'Roboto';
+            font-size: 25px;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .produtos1{
+            background-color: #1E1C21;
+        }
+
+        .container{
+
+            padding:0;
+
+        }
+
+        .container .ofertas {
+            font-family: Titilium-Regular;
+            color: white;
+            text-transform: uppercase;
+
+        }
+
+        .container .row {            
+            padding:0;
+            margin: 0;
+
+        }
+
+        .container .row .col-12 {
+    
+            padding:0;
+            margin: 0;
+            padding: 10px ;
+        }
+
+        .container .row .col-12 .card{
+            
+            background-image: linear-gradient(#C4C4C4,black);
+            border-radius: 0;
+            border-style: none;
+            color: white;
+            max-width: 250px;
+
+            box-shadow: (5px 5px 5px black);             
+
+        }
+       
+
+        .container .row .col-12 .card img{
+            border-style: none;
+            border-radius: 0;
+        };
+
+        .container .row .col-12 .card .card-body{
+            padding:0;
+            margin: 0;
+            
+        }
+
+        .container .row .col-12 .card .card-body .card-title{
+            font-family: 'Roboto';
+            font-size: 22px;
+
+        }
+
+        .container .row .col-12 .card .card-body .card-text{
+            font-family: 'Roboto';
+            font-size: 18px;
+        }
+        
+        .container .row .col-12 .card .card-body .btn{
+
+            background-color: #c31616;
+            border-style: none;
+
+            width: 100%;
+
+            text-transform: uppercase;
+            font-family: 'Roboto';
+
+        }
+
+    }
+
+/* desktop de 992px a 1200px */
+    @media screen and (min-width: 992px) {
+    
+        header{
+            background-color:#1E1C21;
+            margin: 0 auto;
+            
+            display: flex;
+            justify-content: center;
+            padding: 1em;    
+        }
+
+        header .headContainer{
+            width: 1200px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .headContainer .logoContainer{
+            align-items: center;
+        }
+
+        header .headContainer .logoContainer .logo{
+            width: 280px;
+        }
+
+        header .headContainer .imgMenu{
+        display: none;
+        }
+
+        header .headContainer nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            max-width: 780px;
+        }
+
+        header .headContainer nav .menu{
+            font-family: 'Roboto';
+            color: #ffffff; 
+            padding: 0 15px;
+            
+            font-size: 25px;
+            text-decoration: none; 
+            text-transform: uppercase;
+        }
+
+        /* seção dos produtos */
+
+        .produtos{
+            width: 100%;
+            height: 600px;
+            background-color: brown;
+            background-image: url(../images/banner_pilotos.png);
+            background-repeat: no-repeat;
+
+            display: flex;
+            justify-content:center;
+        }
+
+        .produtos .container-grid{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 1200px;
+        }
+
+        .produtos .banner-info{
+            width: 500px;
+            height: 250px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        .produtos .banner-info h1{
+            font-family: "Titilium-Regular";
+            font-size: 80px;
+            font-weight: 100;
+            text-align: center;
+            color: white;
+        }
+
+        .produtos .banner-info p{
+            font-family: 'Roboto';
+            text-align: center;
+            font-size: 18px;
+            color: white;
+        }
+
+        .produtos .banner-info nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* botão */
+        .produtos .banner-info nav a{
+            width: 250px;
+            height: 65px;
+            margin: 10px auto;
+
+            border-radius: 10px;
+            border-style: none;
+
+            background-color: #c31616;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            font-family: 'Roboto';
+            font-size: 25px;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .produtos1{
+            background-color: #1E1C21;
+        }
+
+        .container{
+
+            padding:0;
+
+        }
+
+        .container .ofertas {
+            font-family: Titilium-Regular;
+            color: white;
+            text-transform: uppercase;
+
+        }
+
+        .container .row {            
+            padding:0;
+            margin: 0;
+
+        }
+
+        .container .row .col-12 {
+    
+            padding:0;
+            margin: 0;
+            padding: 10px ;
+        }
+
+        .container .row .col-12 .card{
+            
+            background-image: linear-gradient(#C4C4C4,black);
+            border-radius: 0;
+            border-style: none;
+            color: white;
+            max-width: 250px;
+
+            box-shadow: (5px 5px 5px black);             
+
+        }
+        .container .row .col-12 .card:hover{
+            opacity: 60%;
+        }
+
+        .container .row .col-12 .card img{
+            border-style: none;
+            border-radius: 0;
+        };
+
+        .container .row .col-12 .card .card-body{
+            padding:0;
+            margin: 0;
+            
+        }
+
+        .container .row .col-12 .card .card-body .card-title{
+            font-family: 'Roboto';
+            font-size: 22px;
+
+        }
+
+        .container .row .col-12 .card .card-body .card-text{
+            font-family: 'Roboto';
+            font-size: 18px;
+        }
+        
+        .container .row .col-12 .card .card-body .btn{
+
+            background-color: #c31616;
+            border-style: none;
+
+            width: 100%;
+
+            text-transform: uppercase;
+            font-family: 'Roboto';
+
+        }
+
+    }
